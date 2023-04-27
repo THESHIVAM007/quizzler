@@ -15,6 +15,7 @@ class Quizzler extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title:Text('Quizzler'),
+           backgroundColor: Colors.purple[900],
           centerTitle: true,
         ),
         backgroundColor: Colors.grey.shade900,
@@ -40,7 +41,7 @@ class _QuizPageState extends State<QuizPage> {
   void checkAnswer(bool upAns) {
 
 if(quizBrain.isFinshied()==true){
-  Alert(context: context, title: "Finished", desc: "$score/12   you have reached at the end of the quiz.").show();
+  Alert(context: context, title: "Finished", desc: "$score/13   you have reached at the end of the quiz.").show();
 
   setState(() {
     score = 0;
